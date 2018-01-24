@@ -1,7 +1,6 @@
 class LocationsController < ApplicationController
   def create
-    @location = Location.new(location_params)
-    redirect_to weather_informations_path(@location.attributes)
+    redirect_to weather_informations_path(Location.new(location_params).attributes)
   end
 
   private

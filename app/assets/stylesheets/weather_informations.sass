@@ -1,8 +1,10 @@
+$white: #fafafa
+
 article#weather_informations
   font-family: 'Raleway', sans-serif
 
   header
-    color: #fafafa
+    color: $white
     background-color: #292b37
 
     .row
@@ -18,6 +20,7 @@ article#weather_informations
   section
     table
       margin-top: 15vh
+      table-layout: fixed
       width: 100%
 
       thead th
@@ -26,8 +29,21 @@ article#weather_informations
 
       tbody
         th, td
+          border: solid 1px $white
           text-align: center
 
         p
           font-weight: normal
           margin: 0
+
+        tr
+          th
+            background: #f7e4e4
+            padding: 1em 0
+          td
+            background: #f2f2f2
+            padding: 0.5em
+
+    canvas
+      height: 50%
+      max-width: 100%

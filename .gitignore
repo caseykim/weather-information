@@ -11,3 +11,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore application configuration figaro
+/config/application.yml

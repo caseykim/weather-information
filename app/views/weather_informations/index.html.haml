@@ -1,0 +1,25 @@
+%article#weather_informations
+  %header
+    .row
+      .col-xs-6.col-md-9 Weather Information
+      .col-xs-6.col-md-3
+        = simple_form_for Location.new, remote: true do |f|
+          .input-group.searchbox
+            = f.input :address, label: false, required: true,
+                      placeholder: 'location', input_html: { class: 'form-control' }
+            %span.input-group-btn
+              = f.submit 'Search', class: 'btn btn-primary'
+
+  %section
+    .col-xs-10.col-xs-offset-1.col-md-8.col-md-offset-2
+      %table.weather-box
+        %thead
+          %tr
+            %th{ colspan: 7 }
+              %h5.pull-right @ #{@location_name}
+        %tbody
+          %tr
+            - (6.days.ago.to_date..Time.zone.today).each do |date|
+              %th
+                %strong= date.strftime('%A')
+                %p= date.strftime('%m/%d/%y')

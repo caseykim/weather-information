@@ -23,5 +23,5 @@ class @WeatherTable
 
     @skycons.play()
 
-$ ->
+document.addEventListener 'turbolinks:load', ->
   new WeatherTable

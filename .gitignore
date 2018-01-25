@@ -14,3 +14,9 @@
 
 # Ignore application configuration figaro
 /config/application.yml
+
+*.yaml
+
+cloud_sql_proxy
+
+service-account.json

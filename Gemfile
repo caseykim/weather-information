@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.0'
+gem 'appengine'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'figaro'
@@ -13,7 +14,9 @@ gem 'pg', '~> 0.20.0'
 gem 'sass-rails', '~> 5.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sequel'
 gem 'simple_form'
+gem 'stackdriver'
 gem 'turbolinks'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

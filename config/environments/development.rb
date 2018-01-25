@@ -38,4 +38,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Stackdriver Logging specific parameters
+  config.google_cloud.logging.project_id = ENV['GCP_PROJECT_ID']
+  config.google_cloud.logging.keyfile    = 'service-account.json'
 end

@@ -1,0 +1,2 @@
+default: &default
+  project_id: weather-information-193109

@@ -8,7 +8,7 @@ A Rails application to display weather information for past 7 days using
 
 Preview
 -
-![Screen Shot](/assets/images/app-preview.png "Screen Shot")
+![Screen Shot](app/assets/images/app-preview.png "Screen Shot")
 
 Usage
 -
